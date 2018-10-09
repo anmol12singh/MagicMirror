@@ -88,14 +88,6 @@ if $NODE_INSTALL; then
 	echo -e "\e[92mNode.js installation Done!\e[0m"
 fi
 
-echo -e "\e[96mCloning MagicMirror ...\e[90m"
-if git clone --depth=1 https://github.com/anmol12singh/MagicMirror.git; then 
-	echo -e "\e[92mCloning MagicMirror Done!\e[0m"
-else
-	echo -e "\e[91mUnable to clone MagicMirror."
-	exit;
-fi
-
 cd ~/MagicMirror  || exit
 echo -e "\e[96mInstalling dependencies ...\e[90m"
 if npm install; then 
